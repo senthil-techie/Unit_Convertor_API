@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="home-wrapper">
+    <div class="glass-card">
+        <a href="/">Home</a>
+        <hr>
+
+        <h2 class="page-title">🌡️ Temperature Converter</h2>
+
+        <form action="/temperature" method="post">
+            Value: <input type="number" step="any" name="value" required><br><br>
+
+            From:
+            <select name="from">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            To:
+            <select name="to">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            <br><br>
+            <button type="submit">Convert</button>
+        </form>
+
+        <h3 th:text="'Result = ' + ${result}"></h3>
+
+    </div>
+</div>
+
+
+</body>
+</html>
