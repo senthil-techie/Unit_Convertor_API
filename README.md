@@ -43,20 +43,7 @@ UnitConverter/
 │   │   └── application.properties
 │
 └── pom.xml
-⚙️ How to Run the Project
 
-Clone the repository:
-
-git clone https://github.com/your-username/unit-converter.git
-Open the project in IntelliJ IDEA
-
-Run the main class:
-
-UnitConvertorApplication.java
-
-Open browser:
-
-http://localhost:8070/
 🧠 How It Works
 User selects a converter (Length / Weight / Temperature)
 Enters value and selects units
